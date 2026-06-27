@@ -1,0 +1,225 @@
+/* Header*/
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 40px;
+    max-width:1400px;
+    margin:auto;
+}
+
+nav ul{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1A365D;
+    font-weight:700;
+    font-size:1.05rem;
+    transition:0.3s;
+    padding:8px 12px;
+    border-radius:12px;
+}
+nav a:hover{
+    background:rgba(255,255,255,0.5);
+    color:#0F172A;
+}
+
+/*body*/
+body{
+    background-image: url("/img/fondo.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 600px;
+    color:white;
+}
+nav{
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50px;
+
+    padding: 12px 25px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.15),
+        0 2px 6px rgba(0,0,0,0.1);
+}
+
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+main{
+    flex:1;
+}
+
+/*logo*/
+.logo{
+    display:flex;
+    align-items: center;
+    gap:15px;
+}
+.logo img{
+    width:200px;
+    height: auto;
+
+}
+.logo h1{
+    font-size:3rem;
+    margin: 0;
+}
+/*Hero*/
+.hero{
+    min-height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.hero h2{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+.hero p{
+    font-size:1.5rem;
+    max-width:800px;
+    margin:0 auto;
+}
+.hero-texto{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(8px);
+    border-radius:20px;
+    padding:30px;
+    max-width:800px;
+    margin:auto;
+}
+/*login*/
+.btn-login{
+    background-color: #FFD966;
+    color: #2D5DA1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px 30px;
+    border-radius: 40px;
+    transition: 0.3s;
+}
+
+.btn-login:hover{
+    transform: scale(1.05);
+}
+/* titulos*/
+h1, h2, h3,p{
+  color: #1A365D;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3)
+}
+.btn-principal{
+    display:inline-block;
+    margin-top:40px;
+    padding:25px 35px;
+    background:#FFD966;
+    color:#2D5DA1;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:60px;
+    font-size:1.5rem;
+    transition:0.3s;
+}
+
+.btn-principal:hover{
+    transform:scale(1.05);
+}
+footer{
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 80;
+}
+
+/* -----Biblioteca-----*/
+.biblioteca{
+    font-size: 20px;
+    text-size-adjust: none;
+    text-align: center;
+    padding: 50px 20px;
+}
+.tarjetas{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+}
+.cuento{
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 20px;
+    width:300px;
+}
+.cuento button{
+    background:#FFD966;
+    border:none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    cursor:pointer;
+    font-weight: bold;
+
+}
+
+.contacto img{
+    width:80px;
+    height: auto;
+    margin:10px;
+    border-radius: 20px;
+    gap: 20px;
+    
+}
+.contacto{
+    background:  rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding:20px;
+    
+}
+nav a.activo{
+    background:#FFD966;
+    color:#1A365D;
+}
+.btn {
+     display:inline-block;
+    margin-top:40px;
+    padding:25px 35px;
+    background:#FFD966;
+    color:#2D5DA1;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:60px;
+    font-size:1.5rem;
+    transition:0.3s;
+    
+}
+.btn:hover{
+    transform:scale(1.05);
+}
+.volver img{
+       width:350px;
+    height: auto;
+    margin:1px;
+    border-radius: 1px;
+    gap: 20px;
+}
+.volver:hover{
+    transform:scale(1.05)
+    transition:0.3s;
+}
