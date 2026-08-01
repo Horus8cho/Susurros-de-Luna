@@ -34,14 +34,17 @@ nav a:hover{
 
 /*body*/
 body{
-    background-image: url("/img/fondo.png");
+    background-image: url("../img/fondo.png");
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-size: 600px;
     color:white;
+     min-height: 100vh;
+    display:flex;
+    flex-direction: column;
 }
+
 nav{
     background: rgba(255,255,255,0.25);
     backdrop-filter: blur(12px);
@@ -55,13 +58,9 @@ nav{
     box-shadow:
         0 8px 20px rgba(0,0,0,0.15),
         0 2px 6px rgba(0,0,0,0.1);
+            
 }
-
-body{
-    min-height: 100vh;
-    display:flex;
-    flex-direction: column;
-}
+     
 main{
     flex:1;
 }
@@ -125,6 +124,18 @@ h1, h2, h3,p{
   color: #1A365D;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.3)
 }
+h2{
+    font-family:"Cinzel", serif;
+    font-size:60px
+}
+.logo h1{
+    font-family:"Cinzel", serif;
+}
+h1,
+h2,
+h3{
+    font-family:"Cinzel", serif;
+}
 .btn-principal{
     display:inline-block;
     margin-top:40px;
@@ -142,17 +153,20 @@ h1, h2, h3,p{
     transform:scale(1.05);
 }
 footer{
-    text-align: center;
-    padding: 40px 20px;
-    max-width: 80;
+    text-align:center;
+    padding:40px 20px;
+    max-width:80%;
+    margin:auto;
 }
 
 /* -----Biblioteca-----*/
-.biblioteca{
-    font-size: 20px;
-    text-size-adjust: none;
+
+ .biblioteca{
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    margin: 60px auto;
+    width: 90%;
+    max-width: 1400px;
 }
 .tarjetas{
     display:flex;
@@ -161,11 +175,102 @@ footer{
     gap:30px;
 }
 .cuento{
-    background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(8px);
-    border-radius: 20px;
+    background: #F7F2E8;
+    width: 300px;
+    min-height: 360px;
+
+    border-radius: 14px;
+
     padding: 20px;
-    width:300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.30);
+
+    transition:
+        transform .3s,
+        box-shadow .3s;
+    border:2px solid #D8C08B;   
+}
+.cuento{
+    position: relative;
+    background: #F7F2E8;
+    border-radius: 16px;
+    padding: 20px;
+    width: 300px;
+}
+
+.cuento::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:20px;
+    height:100%;
+
+    background:linear-gradient(
+        to right,
+        #5A3922,
+        #7D5533,
+        #A87A4D
+    );
+
+    border-radius:16px 0 0 16px;
+
+    box-shadow:4px 0 8px rgba(0,0,0,.25);
+}
+
+.cuento::after{
+
+    content:"🌙";
+
+    position:absolute;
+
+    left:1px;
+    top:12px;
+
+    width:14px;
+    height:28px;
+
+    font-size:14px;
+    text-align:center;
+}
+
+.cuento:hover{
+
+    transform:
+        translateY(-10px)
+        rotate(-1deg);
+
+    box-shadow:
+        0 20px 35px rgba(0,0,0,.35);
+}
+.cuento h3{
+    font-family: "Cinzel", serif;
+    font-size: 1.8rem;
+}
+.cuento p{
+
+    color:#5B5148;
+
+    line-height:1.5;
+}
+.btn{
+
+    margin-top:20px;
+
+    align-self:center;
+
+    background:#E6B84D;
+
+    color:#2F2A25;
+
+    border-radius:30px;
+
+    padding:12px 22px;
 }
 .cuento button{
     background:#FFD966;
@@ -176,6 +281,7 @@ footer{
     font-weight: bold;
 
 }
+/*-----Contacto------*/
 
 .contacto img{
     width:80px;
@@ -212,14 +318,233 @@ nav a.activo{
 .btn:hover{
     transform:scale(1.05);
 }
-.volver img{
-       width:350px;
-    height: auto;
-    margin:1px;
-    border-radius: 1px;
-    gap: 20px;
+.Volver{
+       font-family: "Cinzel", serif; 
+       font-size: 1.8rem;
+       text-align:center;
+} 
+
+.Volver a {
+    color:#5B5148;
 }
-.volver:hover{
-    transform:scale(1.05)
+.Volver:hover{
+    
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:60px;
+    font-size:1.5rem;
     transition:0.3s;
+}
+
+.contenedor-icono svg{
+    color:red;
+    font-size:3rem;
+}
+.redes{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:20px;
+}
+
+.redes a{
+    color:#1A365D;
+    font-size:50px;
+    transition:.3s;
+}
+
+.redes a:hover{
+    color:#FFD166;
+    transform:translateY(-5px) scale(1.1);
+}
+
+.video {
+  /* 1. Activa el modelo de caja flexible */
+  display: flex;         
+  
+  /* 2. Alinea el contenido al centro */
+  justify-content: center; 
+  align-items: center; 
+ }
+ 
+.carrusel-item-1 {
+  background-image: url('../img/');
+  background-size: cover;       /* Ajusta la imagen para cubrir todo el espacio */
+  background-position: center;   /* Centra la imagen para que no se corte mal */
+}
+/* =======================
+   TABLETS
+======================= */
+@media (max-width: 992px){
+
+    header{
+        flex-direction: column;
+        gap:20px;
+        padding:20px;
+    }
+
+    .logo{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .logo img{
+        width:150px;
+    }
+
+    .logo h1{
+        font-size:2.2rem;
+    }
+
+    nav{
+        width:100%;
+        padding:15px;
+    }
+
+    nav ul{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .hero h2{
+        font-size:2.5rem;
+    }
+
+    .hero p{
+        font-size:1.2rem;
+    }
+
+    .hero-texto{
+        width:90%;
+    }
+
+    .tarjetas{
+        gap:20px;
+    }
+
+    .cuento{
+        width:280px;
+    }
+
+    /* =======================
+   CELULARES
+======================= */
+@media (max-width:768px){
+
+    header{
+        padding:15px;
+    }
+
+    nav{
+        border-radius:20px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .logo img{
+        width:120px;
+    }
+
+    .logo h1{
+        font-size:1.8rem;
+        text-align:center;
+    }
+
+    .hero{
+        min-height:auto;
+        padding:40px 15px;
+    }
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .hero-texto{
+        padding:20px;
+    }
+
+    .btn-principal{
+        width:100%;
+        padding:15px;
+        font-size:1.2rem;
+    }
+
+    .cuento{
+        width:100%;
+        max-width:350px;
+    }
+
+    .contacto{
+        width:90%;
+        margin:auto;
+    }
+
+    .redes a{
+        font-size:40px;
+    }
+}
+
+/* =======================
+   MÓVILES PEQUEÑOS
+======================= */
+@media (max-width:480px){
+
+    h2{
+        font-size:2rem;
+    }
+
+    .hero h2{
+        font-size:1.6rem;
+    }
+
+    .hero p{
+        font-size:.95rem;
+    }
+
+    .logo h1{
+        font-size:1.5rem;
+    }
+
+    nav a{
+        font-size:1rem;
+    }
+
+    .btn-principal,
+    .btn{
+        font-size:1rem;
+        padding:12px 20px;
+    }
+
+    footer{
+        padding:20px 10px;
+    }
+
+}
+
+.carousel {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.carousel img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media (max-width:768px){
+
+    .carousel img{
+        height:250px;
+    }
+
 }

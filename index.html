@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Susurros de Luna</title>
-
+     <meta name="description" content="Biblioteca digital de relatos, cuentos y novelas. Descubre historias únicas en Susurros de Luna.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 </head>
 
@@ -22,6 +25,7 @@
         <h1>Susurros de Luna</h1>
 
     </div>
+    
 
     <nav>
 
@@ -35,14 +39,7 @@
         </ul>
 
     </nav>
-
-    <div class="login">
-
-        <a href="login.html" class="btn-login">
-            Iniciar sesión
-        </a>
-
-    </div>
+    
 
 </header>
 
@@ -55,6 +52,52 @@
         <h2>
             Historias que iluminan la imaginación
         </h2>
+    <div id="carouselExampleIndicators" class="carousel slide">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0" class="active"></button>
+
+    <button type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"></button>
+
+    <button type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="../img/carrusel/lunacuriosacarrusel.jpg" class="d-block w-100" alt="Luna curiosa">
+    </div>
+
+    <div class="carousel-item">
+      <img src="../img/carrusel/leoncarrusel.jpg" class="d-block w-100" alt="León">
+    </div>
+
+    <div class="carousel-item">
+      <img src="../img/carrusel/conejocarrusel.jpg" class="d-block w-100" alt="Conejo">
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+
+      <span class="carousel-control-prev-icon"></span>
+
+  </button>
+
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+
+      <span class="carousel-control-next-icon"></span>
+
+  </button>
+
+</div>
 
         <p>
 
@@ -86,6 +129,6 @@
     </p>
 
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
