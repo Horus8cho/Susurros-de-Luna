@@ -426,7 +426,7 @@ nav a.activo{
     .cuento{
         width:280px;
     }
-
+}
     /* =======================
    CELULARES
 ======================= */
@@ -547,4 +547,37 @@ nav a.activo{
         height:250px;
     }
 
+}
+
+.obras{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    max-width:900px;
+    margin:60px auto;
+    padding:20px;
+}
+
+.obras img{
+    width:100%;
+    max-width:650px;
+    height:auto;
+}
+
+.obras h2{
+    margin-top:30px;
+
+    font-family:'Cinzel', serif;
+    font-size:2rem;
+
+    color:#1A365D;
+    line-height:1.5;
+
+    max-width:700px;
+}
+.obras img{
+    max-width:450px;
 }
